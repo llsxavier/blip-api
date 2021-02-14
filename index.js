@@ -5,4 +5,4 @@ const app = express();
 
 app.use(routes);
 
-app.listen(3000, () => console.log('connected'));
+app.listen(3000, () => console.log('Connected'));
