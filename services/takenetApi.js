@@ -32,6 +32,7 @@ const cSharpFiltered = async () => {
     await api
       .get()
       .then((data) => {
+        console.log(data)
         result = {
           1: data.data[0],
           2: data.data[1],
