@@ -43,7 +43,7 @@ const cSharpFiltered = async () => {
       .catch((error) => {
         throw new Error(error);
       });
-    return result;
+    return {result};
   } catch (error) {
     console.log(error);
   }
