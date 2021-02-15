@@ -32,7 +32,13 @@ const cSharpFiltered = async () => {
     await api
       .get()
       .then((data) => {
-        result = data.data;
+        result = {
+          1: data.data[0],
+          2: data.data[1],
+          3: data.data[2],
+          4: data.data[3],
+          5: data.data[4],
+        };
       })
       .catch((error) => {
         throw new Error(error);
